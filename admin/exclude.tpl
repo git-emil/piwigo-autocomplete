@@ -10,13 +10,13 @@
 </tr>
 
 <tr>
-<td>
-<select style="width:500px" name="excluded_albums[]" multiple="multiple" size="25">
+<td style="width:50%">
+<select style="width:100%" name="excluded_albums[]" multiple="multiple" size="25">
   {html_options options=$albums selected=$albums_selected}
 </select>
 </td>
-<td>
-<select style="width:500px" name="excluded_tags[]" multiple="multiple" size="25">
+<td style="width:50%">
+<select style="width:100%" name="excluded_tags[]" multiple="multiple" size="25">
   {html_options options=$tags selected=$tags_selected}
 </select>
 </td>

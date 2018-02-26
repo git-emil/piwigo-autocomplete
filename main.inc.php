@@ -62,10 +62,10 @@ var s;
 ';
 
   $css_src = get_root_url().'plugins/'.RVAC_ID.'/res/dark-hive/custom.css';
-  $fs .= 's="'.$css_src.'";
-if (document.createStyleSheet) document.createStyleSheet(s); else $("head").append($("<link rel=\'stylesheet\' href=\'"+s+"\' type=\'text/css\'>"));';
-  $fs .= '
-});';
+  $fs .= '});';
+  
+  GPCCore::addHeaderCSS(RVAC_ID, $css_src,-10);
+	
   $template->block_footer_script( array(), $fs);
   $template->func_combine_script( array('id'=>'jquery','load'=>'footer'));
 }
